@@ -16,7 +16,7 @@ export default class BabyHog extends Component {
     console.log(props.eyeColor);
     super(props)
     this.state = {
-      weight: 50
+      weight: 200
     }
   }
 
@@ -44,7 +44,7 @@ export default class BabyHog extends Component {
         </Button>
 
         <div className="hb-wrap">
-          <img src={eyeColorMapper[this.props.eyeColor]} style={{height: '200px'}} alt="MasterBlasterJrJr" />
+          <img src={eyeColorMapper[this.props.eyeColor]} style={{height: `${this.state.weight}px`}} alt="MasterBlasterJrJr" />
         </div>
 
       </li>
