@@ -30,19 +30,19 @@ export default class MasterHog extends Component {
         Sun<br></br>
         <input type="radio" name="eyeColor" value="glowing" onChange={this.changeEyeColor} />
         Glowing<br></br>
-      
+
         <h2>Name: Master Blaster</h2>
         <h3>Weight: 2.54 Tons</h3>
         <h3>Eye Color: {this.state.eyeColor}</h3>
-        
+
         <div id="masters-domicile">
           <img id="master-blaster" src={Master} alt="" />
         </div>
-        
+
         <ul className="hoglist">
-          <BabyHog />
-          <BabyHog />
-          <BabyHog />
+          <BabyHog handleEyeChange={this.state.eyeColor} />
+          <BabyHog handleEyeChange={this.state.eyeColor} />
+          <BabyHog handleEyeChange={this.state.eyeColor} />
         </ul>
 
       </div>
